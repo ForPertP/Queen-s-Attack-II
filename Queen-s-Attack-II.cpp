@@ -3,10 +3,10 @@ int queensAttack(int n, int k, int r_q, int c_q, vector<vector<int>> obstacles)
 	int X = r_q;
 	int Y = c_q;
 
-	int E = n - c_q;
-	int W = c_q - 1;
-	int N = n - r_q;
-	int S = r_q - 1;
+	int E = n - Y;
+	int W = Y - 1;
+	int N = n - X;
+	int S = X - 1;
 	int NE = std::min(N, E);
 	int NW = std::min(N, W);
 	int SE = std::min(S, E);
